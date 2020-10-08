@@ -14,7 +14,7 @@
     <title>Pizza_Store</title>
 </head>
 
-<header>
+<header id="home">
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand mx-auto text-warning" href="#"><span
                 style="font-weight: 700;font-family: 'Sansita Swashed', cursive;">Pizza-Store</span></a>
@@ -25,17 +25,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Garelly</a>
+                    <a class="nav-link" href="#garelly">Garelly</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link" href="#about">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
+                <button class="btn btn-warning">ORDER</button>
             </ul>
         </div>
     </nav>
@@ -45,14 +46,14 @@
             PIZZA SHOULD BE SPECIAL, <br> AND WE CARRY THAT BELIEF INTO EVERYTHING WE DO.</p>
         <hr class="my-4"> <br> <br>
         <button class="btn btn-lg bg-warning mr-auto">BOOK NOW</button>
-        <button class="btn  btn-lg  btn-outline-warning mr-auto">VIEW MENU</button>
+        <button class="btn  btn-lg  btn-outline-warning mr-auto" href="#about">VIEW MENU</button>
 
     </div>
 </header>
 
 <body>
     <div class="container p-3 text-center">
-        <h1>IMAGE GARELLY</h1>
+        <h1 id="garelly">IMAGE GARELLY</h1>
         <div class="card-group pt-3 pl-5 pr-5 ">
             <div class="card hovereffect">
                 <img class="card-img-top" src="image/a.jpg" alt="Card image cap">
@@ -101,9 +102,9 @@
         </div>
     </div>
 
-    <div class="about text-center mb-5">
+    <div id="about" class="about text-center mb-5">
         <div class="body p-5">
-            <h1 class="text-center p-3">WE'RE PIZZA-STORE</h1>
+            <h1  class="text-center p-3">WE'RE PIZZA-STORE</h1>
             <p>What’s our purpose at Vincent? Moments of Excitement. <br> All made possible by our flavor, innovation
                 and, <br> most importantly, by unlocking potential in our team members.</p>
             <p>With more than 50 years of experience under our belts, <br> we understand how to best serve our customers
@@ -131,12 +132,13 @@
     <div class="container text-center">
         <hr>
         <h3 class="text-warning pb-4" style="font-weight: 700;font-family: 'Sansita Swashed', cursive;">PIZZA-STORE</h3>
-        <p class="pb-4">+234,223, 322 : <span class="text-muted text-small"> 8:00 AM - 9:00 PM</span></p>
+        <p id="contact" class="pb-4">+234,223, 322 : <span class="text-muted text-small"> 8:00 AM - 9:00 PM</span></p>
         <div class="mx-auto pb-4">
-            <a class="pr-5" href="#">Home</a>
-            <a class="pr-5" href="#">Garelly</a>
-            <a class="pr-5" href="#">About us</a>
-            <a class="" href="#">Contact Us</a>
+            <a class="pr-5" href="#home">Home</a>
+            <a class="pr-5" href="#garelly">Garelly</a>
+            <a class="pr-5" href="#about">About us</a>
+            <a class="pr-5" href="#contact">Contact Us</a>
+            <a class="" href="#">order</a>
         </div>
         <div class=" mx-auto pb-4">
             <a class="pr-5" href="#"><i class="fa fa-twitter"></i></a>
