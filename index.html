@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Pizza_Store</title>
 </head>
 
 <header>
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand mx-auto text-warning" href="#"><span>Pizza-Store</span></a>
+        <a class="navbar-brand mx-auto text-warning" href="#"><span  style="font-weight: 700;font-family: 'Sansita Swashed', cursive;">Pizza-Store</span></a>
         <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,7 +37,7 @@
         </div>
     </nav>
     <div class="jumbotron header text-right p-5">
-        <h1 class="">PIZZA-STORE</h1>
+        <h1 class="text-warning"  style="font-weight: 700;">PIZZA-STORE</h1>
         <p class="pt-5 ">WE DON’T JUST MAKE PIZZA. WE MAKE PEOPLE’S DAYS. <br> PIZZA-STORE WAS BUILT ON THE BELIEF THAT
             PIZZA SHOULD BE SPECIAL, <br> AND WE CARRY THAT BELIEF INTO EVERYTHING WE DO.</p>
         <hr class="my-4"> <br> <br>
@@ -49,39 +50,33 @@
 <body>
     <div class="container p-3 text-center">
         <h1>IMAGE GARELLY</h1>
-        <div class="card-group pt-5 pl-5 pr-5 ">
+        <div class="card-group pt-3 pl-5 pr-5 ">
             <div class="card">
                 <img class="card-img-top" src="image/a.jpg" alt="Card image cap">
-
             </div>
             <div class="card">
                 <img class="card-img-top" src="image/b.jpg" alt="Card image cap">
-
             </div>
             <div class="card">
                 <img class="card-img-top" src="image/c.jpg" alt="Card image cap">
-
             </div>
         </div>
         <div class="card-group pb-5 pl-5 pr-5">
             <div class="card">
                 <img class="card-img-top" src="image/d.jpg" alt="Card image cap">
-
             </div>
             <div class="card">
                 <img class="card-img-top" src="image/e.jpg" alt="Card image cap">
-
             </div>
             <div class="card">
                 <img class="card-img-top" src="image/g.jpg" alt="Card image cap">
-
             </div>
         </div>
     </div>
-    <h1 class="text-center p-3">WE'RE PIZZA-STORE</h1>
-    <div class="about text-center">
+    
+    <div class="about text-center mb-5">
         <div class="body p-5">
-
+            <h1 class="text-center p-3">WE'RE PIZZA-STORE</h1>
             <p>What’s our purpose at Vincent? Moments of Excitement. <br> All made possible by our flavor, innovation
                 and, <br> most importantly, by unlocking potential in our team members.</p>
             <p>With more than 50 years of experience under our belts, <br> we understand how to best serve our customers
@@ -93,22 +88,37 @@
     <div class="container p-3 text-center">
         <h1>SUBSCRIBE FOR OUR NEWSLETTER</h1>
         <div class=" input-group mx-auto input-group-lg m-3">
-            <input type="text" class="form-control" placeholder="Enter your Email..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="text" class="form-control subm" placeholder="Enter your Email..."
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
-              <span class="input-group-text bg-warning" id="basic-addon2">Submit</span>
+                <span class="input-group-text  btn-outline btn-outline-warning" id="basic-addon2">Submit</span>
             </div>
-          </div>
+        </div>
     </div>
 
 
-
+    <hr>
 </body>
 
-<footer class="footer">
-    <div class="container">
-        
+<footer class=" bg-dark p-5">
+    <div class="container text-center">
+        <hr>
+        <h3 class="text-warning pb-4"  style="font-weight: 700;">PIZZA-STORE</h3>
+        <p class="pb-4">+234,223, 322 : <span class="text-muted text-small"> 8:00 AM - 9:00 PM</span></p>
+        <div class="mx-auto pb-4">
+            <a class="pr-5" href="#">Home</a>
+            <a class="pr-5" href="#">Garelly</a>
+            <a class="pr-5" href="#">About us</a>
+            <a class="" href="#">Contact Us</a>
+        </div>
+        <div class=" mx-auto pb-4">
+            <a class="pr-5" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="pr-5" href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </div>
     </div>
-
+    <hr>
+    <p class="text-center text-muted">PIZZA-STORE &copy; 2020</p>
 </footer>
 
 <script src="js/index.js"></script>

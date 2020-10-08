@@ -3,11 +3,12 @@ header, body, footer{
     color: white;
     
 }
-nav a{
+nav a, footer a{
     color: white;
+    text-transform: uppercase;
 
 }
-nav a:hover{
+nav a:hover, footer a:hover{
     color: yellow;
 
 }
@@ -28,7 +29,10 @@ nav a:hover{
     background-color: rgba(250, 233, 3, 0.5);
     color: black;
 }
-nav span img{
-    border-radius: 50%;
-    width: 10%;
+
+.subm{
+    background: transparent;
+}
+footer a{
+    display: inline-block;
 }
