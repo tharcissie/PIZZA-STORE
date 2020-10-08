@@ -7,6 +7,10 @@ nav a{
     color: white;
 
 }
+nav a:hover{
+    color: yellow;
+
+}
 .header{
     background-image: url(../image/f.jpg);
     background-size: cover;
@@ -17,9 +21,14 @@ nav a{
     object-fit: cover;
 }
 .about{
-    background-image: url(../image/i.jpg);
+    background-image: url(../image/h.jpg);
     background-size: cover;
 }
 .body{
-    background-color: rgba(221, 208, 28, 0.5);
+    background-color: rgba(250, 233, 3, 0.5);
+    color: black;
+}
+nav span img{
+    border-radius: 50%;
+    width: 10%;
 }
