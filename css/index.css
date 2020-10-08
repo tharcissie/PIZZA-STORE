@@ -20,3 +20,6 @@ nav a{
     background-image: url(../image/i.jpg);
     background-size: cover;
 }
+.body{
+    background-color: rgba(221, 208, 28, 0.5);
+}
