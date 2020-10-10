@@ -27,7 +27,7 @@
   * asks for more pizza
  
  ## Link to live site on GitHub Pages
- https://tharcissie.github.io/akan/
+ https://tharcissie.github.io/PIZZA-STORE/
 
 
  ## Licence
