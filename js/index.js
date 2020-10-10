@@ -111,7 +111,7 @@
 
         var unitPrice = new myPizza(inputSize, inputCrust, inputToppings)
          //user interface or front-end
-        $('#unitPrice').text(unitPrice.Price() + 'RWf');
+        $('#unitPrice').text(unitPrice.Price() + 'Rwf');
         //Business logic
         console.log(unitPrice.Price())
         var totalPrice = unitPrice.Price()* inputquantity;
