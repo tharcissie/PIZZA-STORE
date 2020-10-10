@@ -77,7 +77,7 @@
         }
         for (var i = 0; i < this.toppings.length; i++) {
             if (this.toppings[i] == 'Green peppers') {
-                var price8 = 100;
+                var price8 = 110;
                 price_Toppings.push(price8);
             }
         }
