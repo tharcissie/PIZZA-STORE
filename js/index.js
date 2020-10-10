@@ -129,7 +129,7 @@
     function myDerivaration() {
         var location = prompt("Delivery charge is 1000 Rwf, Enter your location", "District, Sector, street");
         if (location != null) {
-          $('#location').text(location)
+          alert('your order will be delivered to' +' ' + location);
         }
       }
       $('#button').click(function() {
