@@ -111,14 +111,14 @@
 
         var unitPrice = new myPizza(inputSize, inputCrust, inputToppings)
          //user interface or front-end
-        $('#unitPrice').text(unitPrice.Price());
+        $('#unitPrice').text(unitPrice.Price() + 'RWf');
         //Business logic
         console.log(unitPrice.Price())
         var totalPrice = unitPrice.Price()* inputquantity;
         console.log(totalPrice);
 
         //user interface or front-end
-        $('#totalPrice').text(totalPrice);
+        $('#totalPrice').text(totalPrice + 'Rwf');
         $('#toppings_display').text(inputToppings);
         $('#size_display').text(inputSize);
         $('#crust_display').text(inputCrust);
