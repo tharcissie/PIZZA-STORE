@@ -16,7 +16,7 @@
  ## Installation
  ### Clone
  Clone this repo to your local machine using <br>
- `https://github.com/tharcissie/akan.git` <br>
+ `https://github.com/tharcissie/PIZZA-STORE.git` <br>
  After cloning it open it in your code editor and run it in your browser
  
  ## BDD
