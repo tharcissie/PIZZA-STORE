@@ -1,4 +1,4 @@
-
+//Business logic
     function myPizza(size, crust, toppings = []) {
         this.size = size;
         this.crust = crust;
@@ -110,10 +110,14 @@
         console.log("toppings:", inputToppings);
 
         var unitPrice = new myPizza(inputSize, inputCrust, inputToppings)
+         //user interface or front-end
         $('#unitPrice').text(unitPrice.Price());
+        //Business logic
         console.log(unitPrice.Price())
         var totalPrice = unitPrice.Price()* inputquantity;
         console.log(totalPrice);
+
+        //user interface or front-end
         $('#totalPrice').text(totalPrice);
         $('#toppings_display').text(inputToppings);
         $('#size_display').text(inputSize);
