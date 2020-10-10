@@ -10,6 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Sansita+Swashed:wght@700&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Pizza_Store</title>
 </head>
@@ -106,7 +108,8 @@
     <div id="about" class="about text-center mb-5">
         <div class="body p-5">
             <h1 class="text-center p-3">WE'RE PIZZA-STORE</h1>
-            <p>What’s our purpose at Vincent? Moments of Excitement. <br> All made possible by our flavor, innovation
+            <p>What’s our purpose at Pizza-store? Moments of Excitement. <br> All made possible by our flavor,
+                innovation
                 and, <br> most importantly, by unlocking potential in our team members.</p>
             <p>With more than 50 years of experience under our belts, <br> we understand how to best serve our customers
                 through tried and true service principles. <br> Instead of following trends, we set them. We create food
@@ -140,86 +143,89 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="">
+                <form action="" id="myForm">
                     <div class="modal-body">
 
                         <div class="input-group mb-3">
                             <select class="custom-select" id="size">
-                                <option selected>Size...</option>
-                                <option>Small</option>
-                                <option>Medium</option>
-                                <option>Large</option>
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
                             </select>
                             <div class="input-group-append">
-                                <label class="input-group-text" for="size">Options</label>
+                                <label class="input-group-text bg-warning" for="size">Size</label>
                             </div>
                         </div>
                         <div class="input-group mb-3">
                             <select class="custom-select" id="crust">
-                                <option selected>Crust...</option>
-                                <option>Crispy</option>
-                                <option>Stuffed</option>
-                                <option>Gluten-free</option>
+                                <option value="Crispy">Crispy</option>
+                                <option value="Stuffed">Stuffed</option>
+                                <option value="Gluten-free">Gluten-free</option>
                             </select>
                             <div class="input-group-append">
-                                <label class="input-group-text" for="crust">Options</label>
+                                <label class="input-group-text bg-warning" for="crust">Crust</label>
                             </div>
                         </div>
-
-                        <h3>Toppings...</h3>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="1">
-                            <label class="form-check-label" for="1">
-                                Pepperoni
-                            </label>
+                        <div id="toppings">
+                            <h3>Toppings...</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Pepperoni" id="1">
+                                <label class="form-check-label" for="1">
+                                    Pepperoni
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Mushrooms" id="2">
+                                <label class="form-check-label" for="2">
+                                    Mushrooms
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Onions" id="3">
+                                <label class="form-check-label" for="3">
+                                    Onions
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Sausage" id="4">
+                                <label class="form-check-label" for="4">
+                                    Sausage
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Bacon" id="5">
+                                <label class="form-check-label" for="5">
+                                    Bacon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Extra Cheese" id="6">
+                                <label class="form-check-label" for="6">
+                                    Extra Cheese
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Black olives" id="7">
+                                <label class="form-check-label" for="7">
+                                    Black olives
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Green peppers" id="8">
+                                <label class="form-check-label" for="8">
+                                    Green peppers
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="2">
-                            <label class="form-check-label" for="2">
-                                Mushrooms
-                            </label>
+                        <div class="form-group pt-2">
+                            <h3>Quantity</h3>
+                            <input type="number" value="1" class="form-control" id="quantity"
+                                placeholder="Enter Number of PIZZA...">
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="3">
-                            <label class="form-check-label" for="3">
-                                Onions
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="4">
-                            <label class="form-check-label" for="4">
-                                Sausage
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="5">
-                            <label class="form-check-label" for="5">
-                                Bacon
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="6">
-                            <label class="form-check-label" for="6">
-                                Extra Cheese
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="7">
-                            <label class="form-check-label" for="7">
-                                Black olives
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="8">
-                            <label class="form-check-label" for="8">
-                                Green peppers
-                            </label>
-                        </div>
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-warning" data-toggle="modal"
+                        <button type="submit" class="btn btn-warning" data-toggle="modal"
                             data-target="#exampleModalCenter1">Place An Order</button>
                     </div>
                 </form>
@@ -232,7 +238,7 @@
     <div class="modal fade" id="exampleModalCenter1" tabindex="-2" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog " role="document">
-            <div class="modal-content bg-dark">
+            <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title text-warning" id="exampleModalLongTitle"
                         style="font-weight: 700;font-family: 'Sansita Swashed', cursive;">PIZZA-STORE</h5>
@@ -241,18 +247,14 @@
                     </button>
                 </div>
                 <div class="container">
-                    <h2>Charge: <span>2000</span>Rwf</h2>
+                    <h1>Unit Price: <span id="unitPrice"></span>Rwf</h2> <br>
+                    <h1>Total Price: <span id="totalPrice"></span>Rwf</h2>
                     <div class="row">
                         <div class="col-lg-6">
                             <form action="">
-                                <div class="form-group">
-                                    <label for="quantity">Quantity</label>
-                                    <input type="number" class="form-control" id="quantity"
-                                        placeholder="Enter Number of PIZZA..">
-                                </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="derivered" id="derivered"
-                                        value="derivered" checked>
+                                    <input onclick="myDerivaration()" class="form-check-input" type="radio"
+                                        name="derivered" id="derivered" value="derivered">
                                     <label class="form-check-label" for="derivered">
                                         Derivered
                                     </label>
@@ -263,37 +265,19 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-warning" data-toggle="modal"
+                    <button type="button" id="button" class="btn btn-warning" data-toggle="modal"
                         data-target="#exampleModalCenter2">Checkout</button>
+                </div>
+                <div class="container" id="details" style="display: none;">
+                    <h3 >Your order details</h3>
+                    <p> <span class="text-warning" id="location"></span> Pizza made from <span class="text-warning" id="toppings_display"></span> Toppings. Crust is <span class="text-warning" id="crust_display"></span>  and the size is <span class="text-warning" id="size_display"></span>
+                    will be derivered to this location <span class="text-warning" id="location"></span></p>
+                    <h3 class="text-warning">THANK YOU!</h3>
                 </div>
             </div>
         </div>
     </div>
     <!--Modal2-->
-
-    <!--Modal3-->
-    <div class="modal fade" id="exampleModalCenter2" tabindex="-3" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog " role="document">
-            <div class="modal-content bg-dark">
-                <div class="modal-header">
-                    <h5 class="modal-title text-warning" id="exampleModalLongTitle"
-                        style="font-weight: 700;font-family: 'Sansita Swashed', cursive;">PIZZA-STORE</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="container">
-                    <h2 class="p-5 text-center">TOTAL PRICE : <span >2000</span>Rwf</h2>
-                </div>
-                <div class="modal-footer">
-                    <h1 class="tex-warning" style="font-weight: 500;font-family:cursive;">THANK YOU!</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Modal3-->
-
 </body>
 
 <footer class=" bg-dark p-5">
