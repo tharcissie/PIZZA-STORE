@@ -20,7 +20,7 @@
         }
 
 
-
+ 
         if (this.crust == "Crispy") {
             price_Crust = 500;
         }
@@ -105,7 +105,7 @@
 
         var inputToppings= $("#toppings input:checkbox:checked").map(function(){
             return $(this).val();
-          }).get(); // <----
+          }).get();   
          
         console.log("toppings:", inputToppings);
 
@@ -123,7 +123,7 @@
         $('#size_display').text(inputSize);
         $('#crust_display').text(inputCrust);
         $('#quantity_display').text(inputquantity);
-
+        this.reset();
     });
 
     function myDerivaration() {
